@@ -3,29 +3,79 @@
   <head>
     <link rel="stylesheet" href="style.css" >
     <meta charset="UTF-8">
-    <title>maquette</title>
+    <title>reservia</title>
   </head>
   <!-- ceci est un commentaire-->
   <body>
-    <h1><p>trouvez votre hébergement pour des vacances de rêve</p></h1>
+    <!--<div class="menu">
+      <p>Filtre</p>
+      <a href="#">economique</a>
+      <a href="#">familial</a>
+      <a href="#">romantique</a>
+      <a href="#">animaux autorisés</a>
+    </div>--><!--
+    <div class="main">
+      <img class="image" src="http://placehold.it/150x150" alt="">
+      <img class="image" src="http://placehold.it/150x150" alt="">
+      <img class="image" src="http://placehold.it/150x150" alt="">
+      <img class="image" src="http://placehold.it/150x150" alt="">
+      <img class="image" src="http://placehold.it/150x150" alt="">
+
+    </div>-->
+    <p><h1>trouvez votre hébergement pour des vacances de rêve</h1></p>
     <h2><p>En plein centre ville ou en pleine nature</p></h2>
-    <div class="bottom">
-    <form method="post" action="traitement de texte">
-      <p>
-        <label for="pseudo">lieu</label>
-        <input type="text" name="pseudo" id="pseudo" placeholder="Saint-Tropez"/>
+    <div class="seek">
+      <form method="post" action="traitement de texte">
+        <label for="nom de ville">lieu</label>
+          <input type="text" name="pseudo" id="pseudo" placeholder="Saint-Tropez"/>
+          <button>RECHERCHE</button>
+        </div>
+        
+      </form>
+    
+    <section id="filter">
+
+      <div class="money">
+        <p><i class="fas fa-money-bill-wave" id="logo_filter"></i></p>
+        <h1>Economique</h1>
       </div>
-      </p>
-    </form>
-    <ul class="nav-bar">
-      <li>filtre</li>
-      <li>economique</li>
-      <li>familial</li>
-      <li>romantique</li>
-      <li>animaux autorisés</li>
-    </ul>
+
+      <div class="family">
+        <p><i class="fas fa-child" id="logo_filter"></i></p>
+        <h1>Familial</h1>
+      </div>
+
+      <div class="hearth">
+        <p><i class="fas fa-hearth" id="logo_filter"></i></p>
+        <h1>Romantique</h1>
+      </div>
+      <div class="pets">
+        <p><i class="fas fa-dog" id="logo_filter"></i></p>
+        <h1>Animaux autorisés</h1>
+      </div>
+    </section>
+
+    <footer>
+      <section id="footer">
+        <div class="about">
+          <!--<p><i class="fas fa-money-bill-wave" id="logo_footer"></i></p>-->
+          <p1>A propos<h5>Fonctionnement générales de vente<br>Données de confidentialités</h5></p1>
+        </div>
+  
+        <div class="hosts">
+          <!--<p><i class="fas fa-child" id="logo_footer"></i></p>-->
+          <p1>Nos hébergements<h5>Charte qualité<br>Soumettre votre hôtel</h5></p1>
+        </div>
+  
+        <div class="assist">
+          <!--<p><i class="fas fa-hearth" id="logo_footer"></i></p>-->
+          <p1>Assistance<h5>Centre d'aide<br>Nous contacter</h5></p1>
+        </div>
+  
+      </section>
+    </footer>
   </body>
-  <footer class="footer_part">
+  <!--<footer class="footer_part">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-lg-3">
@@ -62,6 +112,28 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer>-->
 
+  <!--<footer class="footer_part">
+    <table class="T1">
+      <tr>
+        <td class="C1">A propos</td>
+        <td class="C2">Nos hébergements</td>
+        <td class="C3">Assistance</td>
+      </tr>
+      <tr>
+        <td class="C1">Fonctionnement du site</td>
+        <td class="C2">Charte qualité</td>
+        <td class="C3">Centre d'aide</td>
+      </tr>
+      <tr>
+        <td class="C1">Conditions générales de vente</td>
+        <td class="C2">Soumettre votre hôtel</td>
+        <td class="C3">Nous contacter</td>
+      </tr>
+      <tr>
+        <td>Données de confidentialité</td>
+      </tr>
+    </table>
+  </footer>-->
 </html>
