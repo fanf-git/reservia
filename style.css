@@ -1,3 +1,136 @@
-title {
-  color: blue;
+title{
+  color:blue;
 }
+#filter
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20%;
+  width: 75%;
+  /*border: 1px solid rgba(255, 0, 0, 0.24);*/
+}
+.money, .family, .hearth, .pets
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+  border-radius: 60px 60px 60px 60px;
+  border: 2px solid #00000070;
+}
+#logo_filter
+{
+  display: flex;
+  justify-content: center;
+  color: blue;
+  background-color: #DEEBFF;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px 30px 30px 30px;
+}
+
+
+.footer{
+  background-color: #808080;
+}
+#footer{
+  
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50%;
+  width: 75%;
+  border: 1px solid rgba(255, 0, 0, 0);
+}
+.about, .hosts , .assist
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+  /*border-radius: 10px 30px 30px 30px;*/
+  border: 2px solid #00000000;
+}
+#logo_footer
+{
+  display: flex;
+  justify-content: center;
+  color: blue;
+  background-color: #DEEBFF;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px 30px 30px 30px;
+}
+.p1{
+  color: black;
+}
+/*
+.footer_part{
+  background-color: #fff;
+  padding: 130px 0px 25px;
+}
+.footer_part .single_footer_part h4{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 30px;
+  font-weight: 600;
+}*/
+
+/*.image:first-child{
+  margin: 5px o;
+  
+}*//*
+body{
+  background-color:#1b212e}
+head{
+  background-color: #1b212e;
+}
+
+.body{
+  background-color: #1b212e;
+}
+.nav_bar{
+  align-items: stretch;
+}
+
+.list-inline-item{
+  color: rgb(0, 0, 0);
+}
+
+.footer_part{
+  width: 100%;
+  height: 60px;
+  align-items:stretch;
+  background-color: #1b212e;
+  padding: 130px 0px 25px;
+  } /*
+  h1{
+    color: #fff;
+  }
+  h4{
+    color: rgb(255, 255, 255);
+  }
+  p{
+    color: rgb(0, 0, 0);
+  }
+  T1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+  }
+  /*table{
+    border-collapse: collapse;
+  }
+  .footer_part{
+    background-color: #555555;
+    padding: 70px 0px 25px;
+  }
+  tr{
+    border: 1px solid black;
+    padding: 10px;
+  }
+  td{
+    border: 1px solid black;
+    padding: 10px;
+    
+    }*/
