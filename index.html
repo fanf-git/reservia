@@ -2,147 +2,100 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" >
+    <link  href = ' http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900 ' rel = ' stylesheet ' type = ' text / css ' >
     <meta charset="utf-8">
     <title>reservia</title>
   </head>
-  <!-- ceci est un commentaire-->
   <body>
-    <!--<div class="menu">
-      <p>Filtre</p>
-      <a href="#">economique</a>
-      <a href="#">familial</a>
-      <a href="#">romantique</a>
-      <a href="#">animaux autorisés</a>
-    </div>--><!--
-    <div class="main">
-      <img class="image" src="http://placehold.it/150x150" alt="">
-      <img class="image" src="http://placehold.it/150x150" alt="">
-      <img class="image" src="http://placehold.it/150x150" alt="">
-      <img class="image" src="http://placehold.it/150x150" alt="">
-      <img class="image" src="http://placehold.it/150x150" alt="">
-
-    </div>-->
-    <div id="main">
-      <p><h1>Reservia</h1></p>
-      
-        <div class="elements 1"><a href="#">Hébergements</a></div> 
-        <div class="elements 2"><a href="#">Activités</a></div> 
-        <div class="elements 3"><a href="#"><strong>S'inscrire</strong></a></div>
-      
-    </div>
-    <p><h2>Trouvez votre hébergement pour des vacances de rêve</h2></p>
+    <p><img src="Reservia.png" alt="logo reservia" class="reserv"></p>
+    
+    <nav class="main">
+      <ul class="nav_bar">
+        <li style="list-style: none;" style="text-decoration:none;" class="nav_item active">
+          <a class="nav_link" href="#Hébergements">Hébergements</a></li> 
+        <li style="list-style: none;" style="text-decoration:none;" class="nav_item active">
+          <a class="nav_link" href="Activités">Activités</a></li> 
+        <li style="list-style: none;" style="text-decoration:none;" class="nav_item active">
+          <a class="nav_link" href="S'inscrire"><strong>S'inscrire</strong></a></li>
+      </ul>
+    </nav>
+    <p><h3>Trouvez votre hébergement pour des vacances de rêve</h3></p>
     <p><h3>En plein centre ville ou en pleine nature</h3></p>
     <div class="seek">
       <form method="post" action="traitement de texte">
         <label for="nom de ville"><strong>lieu</strong></label>
+        <p><img src="localise.png" alt="icone_localisation" class="local"</p>
           <input type="text" name="pseudo" id="pseudo" placeholder="Marseille, France"/>
-          <button>RECHERCHE</button>
+          <button class="button"><strong>RECHERCHE</strong></button>
     </div>
     <p><h4>plus de 500 logements sont disponibles dans cette ville</h4></p>
         
       </form>
     
             <section id="filter">
-            
-              <div class="money">
-                <p><i class="fas fa-money-bill-wave" id="logo_filter"></i></p>
-                <h1>Economique</h1>
+              
+              <div class="">
+                <p><i class="" id=""></i></p>
+                <h2>Filtres</h2>
+              </div>
+
+              <div class="economic">
+                <p><img src="graph.png"  alt="logo_graph"></p>
+                <p><i class="graph" id="logo_filter"></i></p>
+                <h2>Economique</h2>
               </div>
             
               <div class="family">
+                <img src="happy.png" alt="logo_graph">
                 <p><i class="fas fa-child" id="logo_filter"></i></p>
-                <h1>Familial</h1>
+                <h2>Familial</h2>
               </div>
             
-              <div class="hearth">
+              <div class="romantic">
+                <img src="love.png" alt="logo_graph">
                 <p><i class="fas fa-hearth" id="logo_filter"></i></p>
-                <h1>Romantique</h1>
+                <h2>Romantique</h2>
               </div>
               <div class="pets">
+                <img src="dog.png" alt="logo_graph">
                 <p><i class="fas fa-dog" id="logo_filter"></i></p>
-                <h1>Animaux autorisés</h1>
+                <h2>Animaux autorisés</h2>
               </div>
             </section>
 
-    <footer>
-            <section id="footer">
-              <div class="about">
-                <!--<p><i class="fas fa-money-bill-wave" id="logo_footer"></i></p>-->
-                <p1>A propos<h5>Fonctionnement générales de vente<br>Données de confidentialités</h5></p1>
+            <aside id="popular">
+              <div class="box_aside">
               </div>
-            
-              <div class="hosts">
-                <!--<p><i class="fas fa-child" id="logo_footer"></i></p>-->
-                <p1>Nos hébergements<h5>Charte qualité<br>Soumettre votre hôtel</h5></p1>
-              </div>
-            
-              <div class="assist">
-                <!--<p><i class="fas fa-hearth" id="logo_footer"></i></p>-->
-                <p1>Assistance<h5>Centre d'aide<br>Nous contacter</h5></p1>
-              </div>
-            
-            </section>
-    </footer>
-  </body>
-  <!--<footer class="footer_part">
+            </aside>
+  <footer class="footer_part">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-lg-3">
-          <div class="single_footer_part">
-            <h4>A propos</h4>
-            <p>
-              Fonctionnement du site
-              <br>
-              conditions générales de vente
-              <br>
-              Données et confidentialités
-            </p>
-          </div>
+        <div class="single_footer_part1">
+          <h4>A propos</h4>
+          <p>
+            Fonctionnement du site
+            <br>
+            Conditions générales de vente
+            <br>
+            Données de confidentialités
+          </p>
         </div>
-        <div class="col-sm-6 col-lg-3">
-          <div class="single_footer_part">
-            <h4>Nos hébergements</h4>
-            <p>
-              Charte qualité
-              <br>
-              Soumettre votre hôtel
-            </p>
-          </div>
+        <div class="single_footer_part2">
+          <h4>Nos hébergements</h4>
+          <p>
+          Charte qualité
+          <br>
+           Soumettre votre hôtel
+          </p>
         </div>
-        <div class="col-sm-6 col-lg-3">
-          <div class="single_footer_part">
-            <h4>Assistance</h4>
-            <p>
-              Centre d'aide
-              <br>
-              Nous contacter
-            </p>
-          </div>
+        <div class="single_footer_part3">
+          <h4>Assistance</h4>
+          <p>
+            Centre d'aide
+            <br>
+            Nous contacter                            
+          </p>
         </div>
-      </div>
     </div>
-  </footer>-->
-
-  <!--<footer class="footer_part">
-    <table class="T1">
-      <tr>
-        <td class="C1">A propos</td>
-        <td class="C2">Nos hébergements</td>
-        <td class="C3">Assistance</td>
-      </tr>
-      <tr>
-        <td class="C1">Fonctionnement du site</td>
-        <td class="C2">Charte qualité</td>
-        <td class="C3">Centre d'aide</td>
-      </tr>
-      <tr>
-        <td class="C1">Conditions générales de vente</td>
-        <td class="C2">Soumettre votre hôtel</td>
-        <td class="C3">Nous contacter</td>
-      </tr>
-      <tr>
-        <td>Données de confidentialité</td>
-      </tr>
-    </table>
-  </footer>-->
+  </footer>
+  </body>
 </html>
