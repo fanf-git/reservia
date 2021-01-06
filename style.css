@@ -1,6 +1,17 @@
 title{
   color:blue;
 }
+#main{
+  display: flex;
+}
+.elements{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+h1{
+  color: blue;
+}
 #filter
 {
   display: flex;
