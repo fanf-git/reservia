@@ -1,10 +1,10 @@
 @font-face{
-  font-family: "raleway";
+  font-family: "raleway", sans-serif;
   src: ('fonts/Raleway-Regular.ttf') format("OpenType");
   font-weight: 400;
 }
 @font-face{
-  font-family: "raleway";
+  font-family: "raleway", sans-serif;
   src: ('fonts/Raleway-Bold.ttf') format("OpenType");
   font-weight: 700;
 }
@@ -25,15 +25,31 @@ header
    width: 100%;
 }
 .menu{
-  width: 100%;
+    width: 100%;
 }
-#navbar
+/*#menu
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+}*/
+.reserv{
+    background-size: cover;
+    object-fit: cover;
+    width: 200px;
+    margin-left: 50px;
+}/*
+.img .reserv{
+    width: 100%;
+    height: auto;
+}*/
+.nav_bar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 150px;
 }
-.logo {
+.logo{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -43,10 +59,6 @@ header
     display: flex;
     justify-content: flex-start;
 }
-ul
-{
-    display: flex;
-}
 #navbar nav ul li
 {
     list-style-type: none;
@@ -54,21 +66,14 @@ ul
 }
 li a
 {
+    margin-left: 5px;
+    margin-right: 5px;
     text-decoration: none;
     color: black;
-}
-#menu
-{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 li a:hover
 {
     color: #0065FC;
-}
-li {
-    border-top: 3px solid #fff;
 }
 li:hover
 {
@@ -81,14 +86,18 @@ li:focus
 .sign-in
 {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 .sign-in a
 {
     color: #0065FC;
+    font-size: 1.5em;
+    font-weight: bold;
     text-decoration: none;
     font-weight: bold;
-    padding: 20px;
+    padding-right: 20px;
+    
 }
 .sign-in a:hover
 {
@@ -96,11 +105,12 @@ li:focus
     border-top: 3px solid #0065FC;
 }
 
+/* MAIN TITLE */
 .main-container
 {
     max-width: 100%;
+    margin-top: 5em;
 }
-/* MAIN TITLE */
 
 #main-title p
 {
@@ -211,9 +221,10 @@ input
 }
 .info
 {
-  display: flex;
-  justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 50px;
 }
 .fa-info
 {
@@ -221,7 +232,7 @@ input
 }
 .fa-circle
 {
-    color: #F2F2F2;
+    color: #0065FC;
 }
 /* ROOMS */
 
@@ -237,6 +248,8 @@ input
     background: #F2F2F2;
     border-radius: 25px;
     width: 60em;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 #main-rooms
 {
@@ -381,6 +394,7 @@ aside
 {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 #aside a
 {
@@ -497,6 +511,8 @@ aside
 {
     text-decoration: none;
     color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .footer a:visited
 {
@@ -506,328 +522,4 @@ aside
 .footer h4
 {
     font-weight: bold;
-}
-/*                                                              MEDIA QUERIES                                                               */
-/*
-@media screen and (max-width: 768px)
-{
-    body 
-    {
-        width: 100%;
-        padding-top: 15px;
-        overflow-x: hidden;
-    }
-    header
-    {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0;
-        width: 100%;
-    }  
-    .logo {
-    display: flex;
-    align-items: flex-end;
-} 
-     h1
-    {
-        margin: 0;
-        width: 50%;
-        position: absolute;
-        padding-left: 15px;
-    }
-    #menu, #navbar
-    {
-        width: 100%;
-    }
-    nav ul
-    {
-        padding: 0;
-        border-bottom: 2px solid #F2F2F2;
-        width: 100%;
-       
-     }
-     nav
-     {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-     }
-    li
-    {
-        text-align: center;
-        flex-basis: 50%;
-    }
-    li:hover
-    {
-        border-bottom: 3px solid #0065FC;
-        border-top: none;
-    }
-    li:focus
-    {
-        border-top: none;
-        border-bottom: 3px solid #0065FC;
-    }
-    #search
-    {
-        padding-left: 15px;
-        margin: 0;
-    }
-    .search-button
-    {
-        display: none;
-    }
-    .search
-    {
-        background: #0065FC;
-        border: 10px solid #0065FC;
-        border-radius: 10px;
-        display: flex;
-    }
-    .fa-search
-    {
-        color: #ffffff;
-    }
-    .sign-in
-    {
-       order: -2;
-       display: flex;
-       padding-top: 40px;
-    }
-   .main-container
-    {
-       width: 100%;
-    }
-   #menu
-   {
-       display: flex;
-       justify-content: flex-end;
-       flex-flow: row wrap;
-   }
-   #filter
-   {
-       padding-left: 15px;
-       margin: 0;
-   }
-   .filter
-   {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-between;
-   }
-   .filter-title
-   {
-       width: 100%;
-        margin: 0;
-   }
-   .price, .family, .romantic, .animal {
-       margin-bottom: 10px;
-   }
-  .info {
-      padding: 10px 0;
-  }
-   #container
-   {
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-       padding: 0;
-   }
-   aside
-   {
-       order: -1;
-       padding: 0;
-       border-radius: 0;
-       margin: 0;
-       width: 100%;
-    }
-    #aside
-    {
-        width: 100%;
-    }
-    .aside span
-    {
-        margin: 0;
-    }
-    .aside figure
-    {
-        width: auto;
-    }
-    #rooms
-    {
-       display: flex;
-       flex-direction: column;
-       background: none;
-       height: auto;
-       width: 100%;
-    }
-    #main-rooms
-    {
-       display: flex;
-       width: 100%;
-       background: none;
-    }
-    .rooms-title
-    {
-        margin-left: 15px;
-    }
-    .rooms
-    {
-        width: 50%;
-        padding: 10px;
-    }
-    .rooms figure
-    {
-        width: auto;
-        margin: 16px 40px;
-    }
-    .rooms img
-    {
-        object-fit: cover;
-        width: 100%;
-    }
-    .more
-    {
-        padding-left: 15px;
-        margin: 0;
-    }
-    #activities
-    {
-       width: 100%;
-       margin: 0;
-    }
-    #activities {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-   }
-   .activities
-   {
-       padding-left: 15px;
-   }
-    #main-visit
-    {
-       display: flex;
-       flex-direction: column;
-       width: 100%;
-    }
-    #main-visit figure
-   {
-       margin: 10px;
-    } 
-    .vieuxp, .pom-fri, .calanques, .dame, .pomegues
-    {
-        padding-bottom: 10px;
-        width: 100%;
-    }
-    .vieuxp h3, .pom-fri h3, .calanques h3, .dame h3, .pomegues h3
-    {
-        padding-left: 10px;
-    }
-    #main-visit img
-    {
-        object-fit: cover;
-        width: 100%;
-        height: 200px;
-    }
-    #footer
-    {
-       display: flex;
-       flex-direction: column;
-       padding-bottom: 10px;
-       width: 100%;
-    }
-   .footer
-   {
-       padding-left: 20px;
-   }
-   .footer a
-   {
-       padding: 5px;
-   }
-}
-@media screen and (min-width: 769px) and (max-width: 1299px) {
-    body {
-        width: 100%;
-    }
-    #container
-   {
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-       padding: 0;
-   }
-    .filter {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-    }
-    #rooms {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    aside {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-        order: -1;
-        margin-bottom: 20px;
-    }
-    #main-visit {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    
-}
-@media screen and (min-width: 1300px) and (max-width: 1599px) {
-    body {
-        width: auto;
-    }
-    header {
-        max-width: 100rem;
-        margin:auto;
-    }
-    #rooms {
-        margin-right: 15px;
-    }
-    .main-container {
-        max-width: 100rem;
-        margin: auto;
-    }
-    #main-visit {
-        width: 100%;
-    }
-    #main-visit figure {
-         margin: 13px 10px;
-    }
-    footer {
-        max-width: 100rem;
-        margin:auto;
-    }
-}
-@media screen and (min-width: 1600px) {
-    body {
-        /*body: 100%;*//*
-        margin: auto;
-        overflow-x: hidden;
-    }
-    header {
-        max-width: 100rem;
-        margin:auto;
-    }
-    .main-container {
-        max-width: 100rem;
-        margin: auto;
-    }
-    footer {
-        max-width: 100rem;
-        margin:auto;
-    }
 }
