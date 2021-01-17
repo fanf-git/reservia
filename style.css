@@ -553,7 +553,7 @@ h3{
         font-weight: bold;
     }
     
-@media screen and (max-width: 376px){
+@media screen and (min-width: 376px){
         body
         {
             width: 100%;
