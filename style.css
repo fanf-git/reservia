@@ -47,7 +47,7 @@ h3{
     {
         display: flex;
         justify-content: flex-end;
-        margin-left:50%;
+        padding-left:50%;
     }
     .nav_bar
     {
@@ -135,7 +135,7 @@ h3{
     }
     input
     {
-        border: 2px solid #F2F2F2;
+        border: 3px solid #F2F2F2;
         height: 36px;
         font-weight: 900;
     }
@@ -274,13 +274,10 @@ h3{
     {
         display: flex;
         justify-content: space-around;
-        /*border-radius: 25px;*/
         padding-bottom: 20px;
-        /*transition: transform 1s;*/
     }
     .rooms figure
     {
-        /*margin: 0;*/
         background: #ffffff;
         border: 5px solid #ffffff;
         border-radius: 25px;
@@ -320,7 +317,6 @@ h3{
         font-weight: 900;
         font-size: 100%;
     }
-    
     .rooms a
     {
         text-decoration: none;
@@ -546,15 +542,10 @@ h3{
     }
     .notre-dame-de-la-garde figure, .parc-longchamp figure
     {
-        /*width: auto;*/
-        /*height: 205px;*/
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
-    /*.h3{
-        margin-left: 3px;
-    }*/
     
     /* FOOTER */
     
@@ -599,11 +590,15 @@ h3{
     {
         padding-left: 3em;
     }
+    .res img
+    {
+        width: auto;
+    }
     .m
     {
         display: flex;
         justify-content: flex-end;
-        margin-left:36%;
+        margin-left:0px;
     }
 
     /*ROOMS SECTION*/
@@ -723,26 +718,53 @@ h3{
         {
             padding: 0px;
         }
+        .res img
+        {
+            width: 53%;
+            padding-left: 18px;
+        }
         .reserv
         {
             margin: 0px;
             padding: 0px;
         }
-        .m
-        {
-            width: 100%;
-            margin: 0px;
-            display: flex;
-            justify-content: space-around;
-        }
-        .nav_item a
-        {
-            border: 30px;
-        }
         .sign-in
         {
             position: absolute;
-            left: 62%;
+            left: 73%;
+        }
+        .m
+        {
+            /*width: 100%;*/
+            margin: 0px;
+            padding-left: 0px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .nav_item
+        {
+            width: 366px;
+            display:flex;
+            justify-content: space-between;
+        }
+        .nav_item a
+        {
+            width: 188px;
+            margin: 0px;
+            border-bottom: 3px solid #F2F2F2;
+            display: flex;
+            justify-content: center;
+        }
+    #hébergements
+    {
+        width: 50%;
+    }
+        .nav_item :hover
+        {
+            color:#0065FC;
+            border-top: none;
+            border-bottom: 3px solid #0065FC;
         }
 
         /*SEARCH SECTION*/
@@ -759,6 +781,10 @@ h3{
         {
             font-size: 1.5em;
         }
+        input
+        {
+            border-right: 0px;
+        }
         .search-button
         {
             display: none;
@@ -771,7 +797,7 @@ h3{
             border: 4px #0065FC solid;
             border-radius: 10px 10px 10px 10px;
             font-weight: bold;
-            padding: 1%;
+            padding: 5px;
         }
         /*FILTER SECTION*/
 
@@ -852,9 +878,6 @@ h3{
         padding: 0px;
         width: 100%;
         background-color: #FFFFFF;
-      /*display: flex;
-        flex-direction: column;
-        justify-content: center;*/
         order: 2;
     }
         .rooms-a
@@ -894,11 +917,12 @@ h3{
         aside
         {
             width: 100%;
+            border-radius: 0px;
         }
         .aside figure
         {
             width: 328px;
-            margin-left: 11%;
+            margin-left: 19%;
 
         }
 
