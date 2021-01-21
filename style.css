@@ -1,9 +1,11 @@
-@font-face{
+@font-face
+{
     font-family: "raleway", sans-serif;
     src: ('fonts/Raleway-Regular.ttf') format("OpenType");
     font-weight: 400;
 }
-@font-face{
+@font-face
+{
     font-family: "raleway", sans-serif;
     src: ('fonts/Raleway-Bold.ttf') format("OpenType");
     font-weight: 900;
@@ -449,7 +451,6 @@ h3{
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
-    /*padding:  50px;*/
 }
     .activities
     {
@@ -463,21 +464,16 @@ h3{
     height: auto;
     display: flex;
     justify-content: space-between;
-    /*flex-wrap: wrap;*/
-    /*align-items: flex-end;*/
 }
     .bloc
     {
         padding: 1px;
-        /*height: 500px;*/
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
     .fort-de-pomègues
     {
-        /*width: auto;*/
-        /*height: 250px;*/
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -488,8 +484,6 @@ h3{
     border-top-right-radius: 25px;
     object-fit: cover;
     width: 390px;
-    /*height: 300px;*/
-    /*margin: auto;*/
     opacity: 1;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
@@ -735,7 +729,6 @@ h3{
         }
         .m
         {
-            /*width: 100%;*/
             margin: 0px;
             padding-left: 0px;
             display: flex;
@@ -877,7 +870,7 @@ h3{
     {
         padding: 0px;
         width: 100%;
-        background-color: #FFFFFF;
+        background-color: #FFFFFF;  
         order: 2;
     }
         .rooms-a
