@@ -1,13 +1,11 @@
-@font-face
-{
+@font-face{
     font-family: "raleway", sans-serif;
-    src: ('fonts/Raleway-Regular.ttf') format("OpenType");
+    src: url('fonts/Raleway-Regular.ttf') format("OpenType");
     font-weight: 400;
 }
-@font-face
-{
+@font-face{
     font-family: "raleway", sans-serif;
-    src: ('fonts/Raleway-Bold.ttf') format("OpenType");
+    src: url('fonts/Raleway-Bold.ttf') format("OpenType");
     font-weight: 900;
 }
 body
@@ -50,7 +48,7 @@ h3{
     {
         display: flex;
         justify-content: flex-end;
-        padding-left:50%;
+        padding-left: 53%;
     }
     .nav_bar
     {
@@ -65,8 +63,8 @@ h3{
     .nav_item a
     {
         padding: 2%;
-        padding-top: 17%;
-        color: #aaa;
+        padding-top: 21%;
+        color: rgb(0, 0, 0);
         text-decoration: none;
         margin-right: 10px;
         margin-left: 10px;
@@ -104,6 +102,7 @@ h3{
 
     .main-container
     {
+        width: 130%;
         max-width: 100%;
         margin-top: 1%;
     }
@@ -167,6 +166,7 @@ h3{
 
 #filter
 {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -193,7 +193,7 @@ h3{
         border-radius: 50px;
         border-left: none;
         margin-top: 10px;
-        margin-right: 48px;
+        margin-right: 88px;
         width: 200px;
         height: 44px;
         cursor: pointer;
@@ -307,6 +307,7 @@ h3{
     }
     .rooms-a
     {
+        width: 100%;
         display: flex;
         flex-direction: row;
     }
@@ -462,10 +463,11 @@ h3{
     
 #main-visit    
 {
-    width: auto;
+    width: 94%;
     height: auto;
     display: flex;
     justify-content: space-between;
+    margin-left: 3%;
 }
     .bloc
     {
@@ -485,7 +487,7 @@ h3{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     object-fit: cover;
-    width: 390px;
+    width: 272px;
     opacity: 1;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
@@ -535,6 +537,7 @@ h3{
         border: 1px solid transparent;
         border-radius: 25px;
         box-sizing: border-box;
+        margin: 0%;
     }
     .notre-dame-de-la-garde figure, .parc-longchamp figure
     {
@@ -581,7 +584,10 @@ h3{
 @media screen and (max-width: 1024px)
 {
     /*HEADER*/
-
+#menu
+{
+    width: 103%;
+}
     .res
     {
         padding-left: 3em;
@@ -594,14 +600,21 @@ h3{
     {
         display: flex;
         justify-content: flex-end;
-        margin-left:0px;
+        margin-left: -19%;
+    }
+    .sign-in
+    {
+        padding-right: 3%;
     }
 
     /*---------------------------------------------------ROOMS SECTION */
 
 #container
 {
+    width: 100%;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
 }
 #rooms
 {
@@ -617,18 +630,23 @@ h3{
         height: 234px;
         margin: 10px;
     }
+    .rooms
+        {
+            padding-right: 6px;
+        }
 
     /*------------------------------------------------------------ASIDE */
    
 #aside
 {
-    width: 30%;
+    width: 109%;
 }    
     aside
     {
-        width: 305px;
-        height: 688px;
+        width: 327px;
+        height: 702px;
         padding: 0px;
+        padding-right: 0px;
     }
     .aside-title
     {
@@ -693,6 +711,12 @@ h3{
         flex-direction: row;
     }
 }
+        /*---------------------------------------------------------FOOTER*/
+
+#footer
+{
+    width: 109%;
+}
 
 @media screen and (max-width: 375px)
 {
@@ -727,16 +751,20 @@ h3{
         .sign-in
         {
             position: absolute;
-            left: 73%;
+            left: 69%;
         }
         .m
         {
+            width: 100%;
             margin: 0px;
             padding-left: 0px;
             display: flex;
             justify-content: space-around;
         }
-        
+        .nav_bar
+        {
+            width: 100%;
+        }
         .nav_item
         {
             width: 366px;
@@ -768,10 +796,6 @@ h3{
     {
         padding-left: 18px;
     }
-        .main-container
-        {
-            margin-top: 5px;
-        }
         h1
         {
             font-size: 1.5em;
@@ -820,6 +844,7 @@ h3{
             width: 150px;
             padding-left: 0px;
             margin-left: 5px;
+            margin-right: 0px;
         }
         .family h3
         {
@@ -828,7 +853,8 @@ h3{
         .bloc-filter
         {
             width: 100%;
-            padding-left: 8%;
+            padding-left: 0%;
+            margin-left: 0px;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -845,7 +871,7 @@ h3{
         }
         .info
         {
-            margin-left: -9px;
+            margin-left: 0px;
         }
 
         /*------------------------------------------------------------ROOMS SECTION */
@@ -859,8 +885,18 @@ h3{
         padding: 0px;
         order: +1;
     }
+        .main-container
+        {
+            width: 100%;
+            margin-top: 5px;
+        }
+    #main-rooms
+    {
+        width: 95%;
+    }
     #container aside
     {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -875,6 +911,10 @@ h3{
         background-color: #FFFFFF;  
         order: 2;
     }
+        .rooms
+        {
+            padding-left: 14px;
+        }
         .rooms-a
         {
             display: flex;
@@ -887,7 +927,8 @@ h3{
         }
         .rooms figure
         {
-            width: 90%;
+            width: 91%;
+            height: 93%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -900,7 +941,7 @@ h3{
 
         /*---------------------------------------------------------------------ASIDE */
 
-#container aside
+#aside
 {
     width: 100%;
 }
@@ -909,11 +950,26 @@ h3{
             width: 100%;
             border-radius: 0px;
         }
+        .aside-title
+        {
+            padding: 30px;
+        }
         .aside figure
         {
-            width: 328px;
-            margin-left: 19%;
+            width: 340px;
+            height: 80%;
+            margin-left: 2%;
 
+        }
+        .aside img
+        {
+            width: 33%;
+            height: 103%;
+        }
+        .aside:hover
+        {
+            -webkit-transform: scale(30);
+	        transform: scale(1.1);
         }
 
         /*--------------------------------------------------------------------ACTIVITIES SECTION */
@@ -926,14 +982,17 @@ h3{
     }
     #main-visit
     {
+        margin: 0px;
+        width: 100%;
+        padding-left: 10px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
     #main-visit img
     {
-        width: 333px;
-        height: 120px;
+        width: auto;
+        height: 124px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -945,6 +1004,7 @@ h3{
         }
         .vieux-port figure, .fort-de-pomègues figure, .îles-du-frioul figure, .parc-national figure, .notre-dame-de-la-garde figure, .parc-longchamp figure
         {
+            width: 86%;
             margin: 8px;
             margin-bottom: 20px;
             display: flex;
@@ -967,8 +1027,15 @@ h3{
 
         /*------------------------------------------------------------------FOOTER */
     
+    #footer
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
         .footer
         {
             width: 100%;
+            padding-bottom: 2%;
         }
 }
