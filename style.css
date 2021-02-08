@@ -586,7 +586,7 @@ h3{
     /*HEADER*/
 #menu
 {
-    width: 103%;
+    width: 100%;
 }
     .res
     {
@@ -675,7 +675,7 @@ h3{
 #main-visit
 {
     width: 100%;
-    margin-left: 3%;
+    margin-left: 0%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -715,7 +715,7 @@ h3{
 
 #footer
 {
-    width: 109%;
+    width: auto;
 }
 
 @media screen and (max-width: 375px)
