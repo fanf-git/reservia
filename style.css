@@ -1,10 +1,10 @@
 @font-face{
-    font-family: "raleway", sans-serif;
+    font-family: "Raleway", sans-serif;
     src: url('fonts/Raleway-Regular.ttf') format("OpenType");
     font-weight: 400;
 }
 @font-face{
-    font-family: "raleway", sans-serif;
+    font-family: "Raleway", sans-serif;
     src: url('fonts/Raleway-Bold.ttf') format("OpenType");
     font-weight: 900;
 }
@@ -49,6 +49,7 @@ h3{
         display: flex;
         justify-content: flex-end;
         padding-left: 53%;
+        margin-top: 3px;
     }
     .nav_bar
     {
@@ -66,9 +67,8 @@ h3{
         padding-top: 21%;
         color: rgb(0, 0, 0);
         text-decoration: none;
-        margin-right: 10px;
-        margin-left: 10px;
         font-weight: 900;
+        border-top: 3px solid transparent;
     }
     .nav_item :hover
     {
@@ -80,7 +80,7 @@ h3{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding-right: 3%;
+        margin-top: 3px;
     
     }
     .sign-in a
@@ -89,7 +89,8 @@ h3{
         font-size: 140%;
         text-decoration: none;
         font-weight: 900;
-        padding-top: 42%;
+        border-top: 30px solid transparent;
+        margin-left: 20px;
         
     }
     .sign-in a:hover
@@ -281,11 +282,8 @@ h3{
 }
     .rooms
     {
-        /*display: flex;
-        justify-content: space-around;*/
-        width: 374px;
-        padding-right: 34px;
-        padding-bottom: 20px;
+        width: 276px;
+        margin: 10px 0px;
     }
     .rooms figure
     {
@@ -293,7 +291,7 @@ h3{
         border: 5px solid #ffffff;
         border-radius: 25px;
         box-shadow: 4px 4px 6px #aaa;
-        transition: transform 0.5s;
+        transition: /*transform*/ 0.5s;
         width: 85%;
         height: 220px;
     }
@@ -377,9 +375,6 @@ h3{
 }
     .aside
     {
-        -webkit-transform: scale(1);
-    	transform: scale(1);
-    	-webkit-transition: .3s ease-in-out;
     	transition: .3s ease-in-out;
     }
     .aside img
@@ -405,6 +400,7 @@ h3{
         width: 31%;
         padding-right: 10px;
         height: 689px;
+        box-sizing: content-box;
     }
     .aside-title
     {
@@ -432,6 +428,7 @@ h3{
     .aside figcaption
     {
         padding-left: 5px;
+        width: 66%;
     }
     .aside figcaption h4
     {
@@ -440,10 +437,6 @@ h3{
     .aside figcaption p
     {
         margin-top: 5px;
-    }
-    .aside span
-    {
-        margin-top: 30px;
     }
     
     /*--------------------------------------------------------------------ACTIVITIES */
@@ -466,6 +459,7 @@ h3{
     width: 94%;
     height: auto;
     display: flex;
+    flex-flow: wrap;
     justify-content: space-between;
     margin-left: 3%;
 }
@@ -580,6 +574,30 @@ h3{
     {
         font-weight: bold;
     }
+@media screen and (max-width: 1384px)
+{
+    .rooms-a
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1278px)
+{
+    #rooms
+    {
+        width: 327px;
+    }
+}
+@media screen and (max-width: 1201px)
+{
+    .aside-title
+    {
+        padding-left: 10%;
+        padding-right: 1%;
+        padding-bottom: 10%;
+    }
+}
     
 @media screen and (max-width: 1024px)
 {
@@ -618,7 +636,7 @@ h3{
 }
 #rooms
 {
-    width: 70%;
+    width: 327px;
 }
     .rooms-title
     {
@@ -629,6 +647,11 @@ h3{
         width: 206px;
         height: 234px;
         margin: 10px;
+    }
+    .rooms-a
+    {
+        display: flex;
+        flex-flow: row wrap;
     }
     .rooms
         {
@@ -709,6 +732,7 @@ h3{
     {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
 }
         /*---------------------------------------------------------FOOTER*/
@@ -718,6 +742,53 @@ h3{
     width: auto;
 }
 
+@media screen and (max-width: 1214px)
+{
+#rooms
+{
+    display: flex;
+    flex-direction: column;
+    order: +1;
+}
+#container
+{
+    display: flex;
+    flex-direction: column;
+}
+}
+@media screen and (max-width: 895px)
+{
+    #main-visit
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+        .bloc
+        {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    footer
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    #main-visit
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bloc
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
 @media screen and (max-width: 375px)
 {
         body
@@ -822,7 +893,7 @@ h3{
 
     #filter
     {
-        padding: 10px;
+        padding: 10px 0px 10px 10px;
         margin-bottom: 1%;
         display: flex;
         justify-content: center;
@@ -854,7 +925,7 @@ h3{
         {
             width: 100%;
             padding-left: 0%;
-            margin-left: 0px;
+            margin-left: -10px;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -892,11 +963,12 @@ h3{
         }
     #main-rooms
     {
-        width: 95%;
+        width: 100%;
     }
     #container aside
     {
         width: 100%;
+        height: 590px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -913,10 +985,13 @@ h3{
     }
         .rooms
         {
-            padding-left: 14px;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 100%;
         }
         .rooms-a
         {
+            width: 100%;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -932,11 +1007,13 @@ h3{
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            margin-left: 5%;   
+            margin-left: 12px;
+            margin-right: 0px;
         }
         .more
         {
             padding-top: 1%;
+            padding-right: 0px;
         }
 
         /*---------------------------------------------------------------------ASIDE */
@@ -947,7 +1024,7 @@ h3{
 }
         aside
         {
-            width: 100%;
+            width: 335px;
             border-radius: 0px;
         }
         .aside-title
@@ -956,10 +1033,10 @@ h3{
         }
         .aside figure
         {
-            width: 340px;
-            height: 80%;
-            margin-left: 2%;
-
+            width: 335px;
+            height: 113px;
+            margin-left: 3%;
+            margin-right: 0px;
         }
         .aside img
         {
@@ -996,6 +1073,12 @@ h3{
         display: flex;
         flex-wrap: wrap;
     }
+        .vieux-port, .bloc, .parc-national
+        {
+            width: 370px;
+            margin-left: -2%;
+            margin-right: -7%;
+        }
         .vieux-port img, .fort-de-pomègues img, .îles-du-frioul img, .parc-national img, .notre-dame-de-la-garde img, .parc-longchamp img
         {
             width: 350px;
@@ -1004,7 +1087,7 @@ h3{
         }
         .vieux-port figure, .fort-de-pomègues figure, .îles-du-frioul figure, .parc-national figure, .notre-dame-de-la-garde figure, .parc-longchamp figure
         {
-            width: 86%;
+            width: 92%;
             margin: 8px;
             margin-bottom: 20px;
             display: flex;
