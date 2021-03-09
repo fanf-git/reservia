@@ -281,7 +281,7 @@
     {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        align-items: center;
     }
     #rooms
     {
@@ -322,7 +322,7 @@
         }
         .rooms-a
         {
-            width: 100%;
+            justify-content: center;
             display: flex;
             flex-direction: row;
         }
